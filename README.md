@@ -6,4 +6,4 @@
 
 ## Database
 
-- 인덱스
+- [인덱스](https://github.com/seongbinko/cs-for-developer/blob/main/Database/Index_sb.md)
