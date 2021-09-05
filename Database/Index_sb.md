@@ -11,11 +11,8 @@
 
 ### Index Range scan
 
-- 인덱스 설정 할 시에 효과가 좋다.
-
-![IMG_0070](https://user-images.githubusercontent.com/60464424/132116404-99c2d3a6-765f-48a8-87e1-a3895b79a24c.jpg)
-
-![IMG_0069](https://user-images.githubusercontent.com/60464424/132116405-dcbe4467-5480-44d2-999a-17e01801f4ef.jpg)
+- 인덱스 설정 할 시에 조회 성능이 좋아진다
+    - 10만건 기준 5.62s -> 0.01s
 
 ## 3. 인덱스의 구조와 원리
 
