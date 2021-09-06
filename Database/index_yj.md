@@ -143,8 +143,13 @@ SELECT * FROM CUSTOMER WHERE ID = 10; 쿼리를 수행할 때
 
 # 참고한 자료들
 https://www.vertabelo.com/blog/all-about-indexes-part-2-mysql-index-structure-and-performance/
+
 https://ko.wikipedia.org/wiki/B_%ED%8A%B8%EB%A6%AC
+
 https://www.geeksforgeeks.org/introduction-of-b-tree-2/
+
 https://jojoldu.tistory.com/243
+
 https://lalwr.blogspot.com/2016/02/db-index.html
+
 https://matice.tistory.com/8
