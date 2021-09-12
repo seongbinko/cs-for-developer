@@ -40,20 +40,20 @@
   
   * 시스템 입장
     1) cpu utilization (이용률)
-     전체 시간 중에서 cpu가 놀지 않고 일한 시간의 비율 > cpu를 가능한 놀지 않게 일을 시켜라 
+     - 전체 시간 중에서 cpu가 놀지 않고 일한 시간의 비율 > cpu를 가능한 놀지 않게 일을 시켜라 
     
     2) throughput (처리량 / 산출량)
-     주어진 시간 동안에 과연 몇개의 일을 처리했느냐
+     - 주어진 시간 동안에 과연 몇개의 일을 처리했느냐
      
   * 프로그램입장
     1) turnaround time
-      cpu를 쓰러 들어와서 다 쓰고 나갈 때까지 걸린 시간 > i/o 하러 나갈 때까지 걸린 시간
+      - cpu를 쓰러 들어와서 다 쓰고 나갈 때까지 걸린 시간 > i/o 하러 나갈 때까지 걸린 시간
     
     2) waiting time
-      CPU가 서비스를 받기 위해 Ready Queue에서 얼마나 기다렸는지      
+      - CPU가 서비스를 받기 위해 Ready Queue에서 얼마나 기다렸는지      
 
     3) response time
-      cpu쓰겠다고 들어와서 처음으로 cpu쓰기까지 걸린 시간 
+      - cpu쓰겠다고 들어와서 처음으로 cpu쓰기까지 걸린 시간 
       
 ### 5. cpu스케쥴링 알고리즘
  1) FCFS (first come first served)
