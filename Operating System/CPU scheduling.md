@@ -1,6 +1,10 @@
 ## CPU scheduling
 
 ### 1. CPU burst vs IO burst
+
+<img width="426" alt="스크린샷 2021-09-12 오전 11 52 02" src="https://user-images.githubusercontent.com/66991236/132969848-335a6185-f7b2-43fe-ad26-64673454a068.png">
+
+
 1) CPU burst 
    : CPU가 사용되는 단계
    * CPU-Bound Process
@@ -13,7 +17,7 @@
 
 
 ### 2. CPU 스케쥴링
- IO bound가 사람과 인터렉션하는 jobd인데, 이런 job에 cpu를 늦게 할당하게 되면 >> 사람이 너무 오개리다리게 됨
+ IO bound가 사람과 인터렉션하는 job인데, 이런 job에 cpu를 늦게 할당하게 되면 >> 사람이 너무 오개리다리게 됨
  그래서 현재 큐에 들어와있는 cpu를 얻고자 하는 프로세스들 중에 어떤 프로세스에 cpu를 줘야하는지 결정하는 과정이 cpu 스케쥴링
  
  * CPU 스케쥴링의 2가지 이슈
@@ -53,4 +57,15 @@
       
 ### 5. cpu스케쥴링 알고리즘
  1) FCFS (first come first served)
- 2) SJF (Shortest Job first)
+   - 먼저 온 순서대로 처리
+   - 단점 : cpu를 오래 쓰는 프로그램이 먼저 도착해서 cpu를 쓰고 있으면 아주 짧게 cpu를 쓰고 나갈 프로그램이더라도 오래 기다려야함
+   - 즉, 앞에 어떤 프로세스가 있냐에 따라 기다리는 시간에 영향을 미침
+      > 이렇게 긴 프로세스가 먼저 도착해서 짧은 프로세스가 오래 기다리는 현상
+         convoy effect 라고 함
+         
+ 3) SJF (Shortest Job first)
+   - average waiting time을 최소화 하는 알고리즘
+   - cpu를 사용하고자 하는 시간이 제일 짧은 프로그램한테 cpu를 줌
+     그러나 이 알고리즘도 단점이 있음
+     1. starvation 
+     2. cpu burst time을 알 수 없음
